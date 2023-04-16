@@ -17,7 +17,16 @@
 
       <div class="maincontent">
         <script>
-          document.write("Supty Ahmed");
+          // Functions
+          var color = "Green";
+          function functionOne(){
+            // Remove var to make global variable or add window
+              window.color = "Red"; 
+              document.write("Inside Function : " + color);
+          }
+          functionOne();
+          document.write("</br>");
+          document.write("Outside Function : " + color);
         </script>
       </div>
 
